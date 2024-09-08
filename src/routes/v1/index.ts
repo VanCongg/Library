@@ -1,16 +1,13 @@
 import { Router } from 'express'
-import cardsRouter from './cards.routers'
-import usersRouter from './users.routers'
-import logsRouter from './logs.routers'
-import warningsRouter from './war.routers'
+import booksRouter from './book.router'
+import membersRouter from './member.router'
+import loansRouter from './loan.router'
 const router = Router()
 
 router.get('/', (req, res) => {
   res.status(200).json({ message: 'hello word' })
 })
-
-router.use('/cards', cardsRouter)
-router.use('/users', usersRouter)
-router.use('/logs', logsRouter)
-router.use('/warnings', warningsRouter)
+router.use('/books', booksRouter)
+router.use('/members', membersRouter)
+router.use('/loans', loansRouter)
 export default router

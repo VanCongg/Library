@@ -1,6 +1,3 @@
-/**
- * Updated by Horob1 on July 13 2024
- */
 //server
 import server from './app'
 import { env } from './config/environment'
